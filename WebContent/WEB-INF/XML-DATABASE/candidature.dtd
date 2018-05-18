@@ -1,0 +1,2 @@
+DocumentBuilder db=DocumentBuilderFactory.newInstance().newDocumentBuilder();
+Document doc=db.parse(new File("/opt/candidatures.xml"));

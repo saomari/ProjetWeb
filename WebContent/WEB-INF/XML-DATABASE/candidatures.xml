@@ -1,0 +1,21 @@
+<!-- Contenu du fichier candidature.xml -->
+<!DOCTYPE ROOT SYSTEM "candidature.dtd">
+<candidatures>
+	<candidature>
+		<candidat id="c01">
+			<nom>nom</nom>
+			<prenom>prenom</prenom>
+			<civilite>feminin</civilite>
+			<age>19</age>
+			</candidat>
+				<parcours>
+					<annee> année d'obtention du bac</annee>
+					<filiere> filiere bac</filiere>
+					<dernier_diplome> dernier diplome obtenu </dernier_diplome>
+					<filiere> filiere </filiere>
+					<etablissement> établissement </etablissement>
+					<choix> choix de la formation </choix>
+				</parcours>
+	</candidature>
+</candidatures>
+
