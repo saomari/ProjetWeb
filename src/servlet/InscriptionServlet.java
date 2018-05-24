@@ -7,12 +7,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Inscription;
+
 /**
  * Servlet implementation class InscriptionServelet
  */
-@WebServlet("/InscriptionServelet")
+@WebServlet("/InscriptionServlet")
 public class InscriptionServlet extends HttpServlet {
-	public static final String VUE = "/WebContent/pages/inscription/inscription.jsp";
+	public static final String VUE = "/pages/inscription/inscription.jsp";
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -45,6 +47,21 @@ public class InscriptionServlet extends HttpServlet {
 		String add=req.getParameter("paddress");
 		String genderboxes =req.getParameter("genderboxes");
 		String selectbasic =req.getParameter("selectbasic");
+		
+		Inscription f = new Inscription();
+		f.setName(name);
+		f.setPrenom(prenom);
+		f.setMdp(mdp);
+		f.setMdp2(mdp2);
+		f.setPhone(phone);
+		f.setEmail(email);
+		f.setNationalite(nationalite);
+		f.setPaddress(add);
+		f.setGenderboxes(genderboxes);
+		f.setSelectbasic(selectbasic);
+		
+		req.setAttribute("utilisateur", f);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/inscription.jsp").forward(req, response);
 		
 	}
 

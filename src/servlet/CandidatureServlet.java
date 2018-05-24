@@ -1,26 +1,35 @@
 package servlet;
 
 import java.io.IOException;
+
+import javax.jws.WebService;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Formation;
+import com.miage.model.CandidatType;
+import com.miage.model.CandidatureType;
+import com.miage.model.ParcoursType;
+
+import model.Candidature;
 
 /**
- * Servlet implementation class FormationServlet
+ * Servlet implementation class gestionCandidatures
  */
-@WebServlet("/FormationServlet")
-public class FormationServlet extends HttpServlet {
-	public static final String VUE = "/pages/acceuil/formation.jsp";
-       
+
+
+@WebServlet("/CandidatureServlet")
+public class CandidatureServlet extends HttpServlet {
+	private static final String VUE = "/pages/candidature/candidature.jsp";
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FormationServlet() {
+    public CandidatureServlet() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -28,7 +37,9 @@ public class FormationServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		System.err.println("eee");
 		this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+		
 	}
 
 	/**
@@ -36,20 +47,19 @@ public class FormationServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String  motivation =req.getParameter("motivation");
-		String school =req.getParameter("school");
-		String note =req.getParameter("note");
-		String diplome =req.getParameter("diplome");
 		
+		String combobox= req.getParameter("combobox");
 	
-		Formation f = new Formation();
-		f.setMotivation(motivation);
-		f.setSchool(school);
-		f.setNote(note);
-		f.setDiplome(diplome);
-		
-		req.setAttribute("utilisateur", f);
-		this.getServletContext().getRequestDispatcher("/WEB-INF/formation.jsp").forward(req, response);
-	}
 
+		Candidature c = new Candidature();
+		c.setCombobox(combobox);
+		
+		
+		req.setAttribute("utilisateur", c);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/candidature.jsp").forward(req, response);
+		
+		
+	}
+	
+	
 }

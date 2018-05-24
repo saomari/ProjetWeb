@@ -19,7 +19,7 @@ public class XMLMarshaller {
 	 * 
 	 * @return
 	 */
-	public CandidaturesTypes marshllerCondidatures() {
+	public CandidaturesTypes marshllerCondidature() {
 		// cet objet contient la liste des candidatures du fichier xml.
 		CandidaturesTypes candidatures = new CandidaturesTypes();
 		JAXBElement<CandidaturesTypes> candidaturesE = null;

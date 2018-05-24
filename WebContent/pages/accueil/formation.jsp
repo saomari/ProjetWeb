@@ -11,7 +11,9 @@
 	rel="stylesheet" id="bootstrap-css">
 
 </head>
+
 <body>
+<form id="monForm" name="monForm" action="../../FormationServlet" method="post" class="formulaire">
 	<div class="text-center">
 
 		<h1>Dossier de candidature</h1>
@@ -31,7 +33,7 @@
 			</div>
 			<!-- School input-->
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="name">Ancien
+				<label class="col-md-4 control-label" for="school">Ancien
 					établissement :</label>
 
 				<div class="col-md-4">
@@ -79,7 +81,8 @@
 					onclick="startUpload()">Valider</button>
 			</div>
 			<br> <br> <br>
-			<button type="submit" class="btn btn-success">Soumettre</button>
+			 <button type="submit" class="btn btn-success">Soumettre</button>
+			
 
 		</div>
 

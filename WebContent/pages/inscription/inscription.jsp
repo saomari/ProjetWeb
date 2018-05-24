@@ -16,7 +16,7 @@
 		<div class="text-center">
 			<h1 class="nice">Authentification</h1>
 		</div>
-		<form class="form-horizontal" method="post" action="#">
+		<form id="monForm" name="monForm" action="../../InscriptionServlet" method="post" class="formulaire">
 			<!-- Text input-->
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="name">Nom</label>

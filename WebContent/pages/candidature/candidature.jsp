@@ -7,6 +7,7 @@
 <title> Remplir le formulaire conçernant votre condidature </title>
 </head>
 <body>
+<form id="monForm" name="monForm" action="../../CandidatureServlet" method="post" class="formulaire">
 <div>
  <strong>Veuillez selectionner la formation de votre choix :</strong> 
 </div>
@@ -16,21 +17,24 @@
 		<div class="ui-widget">
             <select id="combobox">
                 <option></option>
-                <option value="Ultrasound Knee Right"> MIAGE</option>
-                <option value="Ultrasound Knee Left">Ultrasound Knee Left</option>
-                <option value="Ultrasound Forearm/Elbow Right">Ultrasound Forearm/  Elbow Right</option>
-                <option value="Ultrasound Forearm/Elbow Left">Ultrasound Forearm/Elbow Left</option>
-                <option value="MRI Knee Right">MRI Knee Right</option>
-                <option value="MRI Knee Left">MRI Knee Left</option>
-                <option value="MRI Forearm/Elbow Right">MRI Forearm/Elbow Right</option>
-                <option value="MRI Forearm/Elbow Left">MRI Forearm/Elbow Left</option>
-                <option value="CT Knee Right">CT Knee Right</option>
-                <option value="CT Knee Left">CT Knee Left</option>
-                <option value="CT Forearm/Elbow Right">CT Forearm/Elbow Right</option>
-                <option value="CT Forearm/Elbow Left">CT Forearm/Elbow Left</option>
-          </select>
+					<option value="informatique">Informatique</option>
+					<option value="biologie">Biologie</option>
+					<option value="chimie">Chimie</option>
+					<option value="mathématiques">Mathématiques</option>
+					<option value="sciences de l'ingénieur">Sciences de
+						l'ingénieur</option>
+					<option value="physique">Physique</option>
+					<option value="lettres">Lettres</option>
+					<option value="droit">Droit</option>
+					<option value="economie">Economie</option>
+					<option value="commerce">Commerce</option>
+					<option value="staps">STAPS</option>
+					<option value="medecine">Medecine</option>
+					
+				</select>
         </div>
 	</div>
+	<input type="submit" value= "soumettre">
 </div>
 <br>
 

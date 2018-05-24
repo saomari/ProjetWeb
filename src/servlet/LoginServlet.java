@@ -1,25 +1,22 @@
 package servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Formation;
-
-/**
- * Servlet implementation class FormationServlet
- */
-@WebServlet("/FormationServlet")
-public class FormationServlet extends HttpServlet {
-	public static final String VUE = "/pages/acceuil/formation.jsp";
-       
+@WebServlet("/LoginServelet")
+public class LoginServlet extends HttpServlet{
+	public static final String VUE = "/WebContent/pages/authentification/login.jsp";
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FormationServlet() {
+    public LoginServlet() {
         super();
     }
 
@@ -30,26 +27,16 @@ public class FormationServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
 	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doPost(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String  motivation =req.getParameter("motivation");
-		String school =req.getParameter("school");
-		String note =req.getParameter("note");
-		String diplome =req.getParameter("diplome");
+		String login = req.getParameter("login");
+		String password = req.getParameter("password");
+		PrintWriter out =response.getWriter();
 		
-	
-		Formation f = new Formation();
-		f.setMotivation(motivation);
-		f.setSchool(school);
-		f.setNote(note);
-		f.setDiplome(diplome);
-		
-		req.setAttribute("utilisateur", f);
-		this.getServletContext().getRequestDispatcher("/WEB-INF/formation.jsp").forward(req, response);
-	}
 
+
+		
+
+	}
 }
