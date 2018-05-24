@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:complexType name="formationType">
+        <xs:all>
+            <xs:element name="combobox" type="xs:string" />
+            
+        </xs:all>
+    </xs:complexType>
+    <xs:element name="formations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="formation" maxOccurs="unbounded" type="formationType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

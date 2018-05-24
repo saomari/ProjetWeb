@@ -1,6 +1,6 @@
 package model;
 
-public class Inscription {
+public class Candidat {
 	public String name;
 	public String prenom; 
 	public String mdp;
@@ -10,14 +10,16 @@ public class Inscription {
 	public String nationalite; 
 	public String paddress; 
 	public String genderboxes; 
-	public String selectbasic;
+	public String selectbasic1;
+	public String selectbasic2;
+	public String selectbasic3;
 	
-	public Inscription() {
+	public Candidat() {
 		super();
 	}
 
-	public Inscription(String name, String prenom, String mdp, String mdp2, String phone,
-			String email, String nationalite, String paddress, String genderboxes, String selectbasic) {
+	public Candidat(String name, String prenom, String mdp, String mdp2, String phone,
+			String email, String nationalite, String paddress, String genderboxes, String selectbasic1,String selectbasic2,String selectbasic3) {
 		super();
 		this.name = name;
 		this.prenom = prenom;
@@ -28,7 +30,9 @@ public class Inscription {
 		this.nationalite = nationalite;
 		this.paddress = paddress;
 		this.genderboxes = genderboxes;
-		this.selectbasic = selectbasic;
+		this.selectbasic1 = selectbasic1;
+		this.selectbasic2 = selectbasic2;
+		this.selectbasic3 = selectbasic3;
 	}
 
 	public String getName() {
@@ -103,12 +107,26 @@ public class Inscription {
 		this.genderboxes = genderboxes;
 	}
 
-	public String getSelectbasic() {
-		return selectbasic;
+	public String getSelectbasic1() {
+		return selectbasic1;
 	}
 
-	public void setSelectbasic(String selectbasic) {
-		this.selectbasic = selectbasic;
+	public void setSelectbasic1(String selectbasic1) {
+		this.selectbasic1 = selectbasic1;
+	}
+	public String getSelectbasic2() {
+		return selectbasic2;
+	}
+
+	public void setSelectbasic2(String selectbasic2) {
+		this.selectbasic2 = selectbasic2;
+	}
+	public String getSelectbasic3() {
+		return selectbasic3;
+	}
+
+	public void setSelectbasic3(String selectbasic3) {
+		this.selectbasic3 = selectbasic3;
 	}
 	
 }

@@ -1,13 +1,13 @@
 package model;
 
-public class Candidature {
+public class Criteres {
 	public String combobox;
 	
-	public Candidature() {
+	public Criteres() {
 		super();
 	}
 
-	public Candidature(String combobox) {
+	public Criteres(String combobox) {
 		super();
 		this.combobox = combobox;
 	}

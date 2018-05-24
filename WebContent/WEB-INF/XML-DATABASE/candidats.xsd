@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:complexType name="candidatType">
+        <xs:all>
+            <xs:element name="prenom" type="xs:string" />
+            <xs:element name="nom" type="xs:string" />
+            <xs:element name="email" type="xs:string" />
+            <xs:element name="mdp" type="xs:string" />
+            <xs:element name="sexe" type="xs:string" />
+            <xs:element name="naissance" type="xs:string" />
+            <xs:element name="nationalite" type="xs:string" />
+            <xs:element name="adresse" type="xs:string" />
+        </xs:all>
+    </xs:complexType>
+    <xs:element name="candidats">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="candidat" maxOccurs="unbounded" type="candidatType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -15,12 +15,12 @@
 <div class="container">
 	<div class="row">
 		<div class="ui-widget">
-            <select id="combobox">
+            <select id="combobox" name="combobox">
                 <option></option>
 					<option value="informatique">Informatique</option>
 					<option value="biologie">Biologie</option>
 					<option value="chimie">Chimie</option>
-					<option value="mathématiques">Mathématiques</option>
+					<option value="mathematiques">Mathématiques</option>
 					<option value="sciences de l'ingénieur">Sciences de
 						l'ingénieur</option>
 					<option value="physique">Physique</option>
@@ -30,7 +30,6 @@
 					<option value="commerce">Commerce</option>
 					<option value="staps">STAPS</option>
 					<option value="medecine">Medecine</option>
-					
 				</select>
         </div>
 	</div>

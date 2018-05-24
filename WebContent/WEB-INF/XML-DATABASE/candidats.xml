@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<candidats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="candidats.xsd">
+    <candidat>
+        <prenom>Emmanuel</prenom>
+        <nom>Doulin</nom>
+        <email>e.doulin@mail.com</email>
+        <mdp>password</mdp>
+        <sexe>Féminin</sexe>
+        <naissance>1988-12-03</naissance>
+        <nationalite>Français</nationalite>
+        <adresse>7 Rue du Temple</adresse>
+    </candidat>
+</candidats>

@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.EnregistrementFormation;
+import model.EnregistrementCandidat;
 import model.Formation;
 
 /**
@@ -22,7 +24,10 @@ public class FormationServlet extends HttpServlet {
     public FormationServlet() {
         super();
     }
-
+    public void init() throws ServletException{
+    	super.init();
+    	System.err.println("Initialisé");
+    }
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -47,6 +52,10 @@ public class FormationServlet extends HttpServlet {
 		f.setSchool(school);
 		f.setNote(note);
 		f.setDiplome(diplome);
+		
+		
+		EnregistrementFormation eFormation = new EnregistrementFormation("/WEB-INF/enregistrement.xml");
+		eFormation.enregistrer(f);
 		
 		req.setAttribute("utilisateur", f);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/formation.jsp").forward(req, response);

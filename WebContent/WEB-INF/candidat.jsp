@@ -22,7 +22,7 @@
 				<input type="text" id="prenom" name="prenom"
 					value = "${utilisateur.prenom}" size="20" maxlength="60" /> 
 					<span class="erreur">${form.erreurs['prenom']}</span>
-				</br>"WebContent/WEB-INF/inscription.jsp"
+				</br>
 				<label for="mdp">Mot de passe <span class="form-control">*</span></label>
 				<input type="text" id="mdp" name="mdp"
 					value = "${utilisateur.mdp}" size="20" maxlength="60" /> 
@@ -58,11 +58,21 @@
 					value = "${utilisateur.genderboxes}" size="20" maxlength="60" /> 
 					<span class="erreur">${form.erreurs['genderboxes']}</span>
 				</br>
-				<label for="selectbasic">Date de naissance <span class="form-control">*</span></label>
-				<input type="text" id="selectbasic" name="selectbasic"
-					value = "${utilisateur.selectbasic}" size="20" maxlength="60" /> 
-					<span class="erreur">${form.erreurs['selectbasic']}</span>
+				<label for="selectbasic">Mois de naissance <span class="form-control">*</span></label>
+				<input type="text" id="selectbasic1" name="selectbasic1"
+					value = "${utilisateur.selectbasic1}" size="20" maxlength="60" /> 
+					<span class="erreur">${form.erreurs['selectbasic1']}</span>
 				</br>
+				</br>
+				<label for="selectbasic"> Jour de naissance <span class="form-control">*</span></label>
+				<input type="text" id="selectbasic2" name="selectbasic2"
+					value = "${utilisateur.selectbasic2}" size="20" maxlength="60" /> 
+					<span class="erreur">${form.erreurs['selectbasic2']}</span>
+					</br>
+				<label for="selectbasic">Année de naissance <span class="form-control">*</span></label>
+				<input type="text" id="selectbasic3" name="selectbasic3"
+					value = "${utilisateur.selectbasic3}" size="20" maxlength="60" /> 
+					<span class="erreur">${form.erreurs['selectbasic3']}</span>
 				<input type="submit" value="Inscription" class="sansLabel" />
 			
 			</fieldset>

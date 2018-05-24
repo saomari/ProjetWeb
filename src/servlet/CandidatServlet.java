@@ -7,21 +7,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Inscription;
+import model.EnregistrementCandidat;
+import model.Candidat;
 
 /**
  * Servlet implementation class InscriptionServelet
  */
 @WebServlet("/InscriptionServlet")
-public class InscriptionServlet extends HttpServlet {
+public class CandidatServlet extends HttpServlet {
 	public static final String VUE = "/pages/inscription/inscription.jsp";
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public InscriptionServlet() {
+    public CandidatServlet() {
         super();
         // TODO Auto-generated constructor stub
+    }
+    public void init() throws ServletException{
+    	super.init();
+    	System.err.println("Initialisé");
     }
 
 	/**
@@ -46,21 +51,28 @@ public class InscriptionServlet extends HttpServlet {
 		String nationalite =req.getParameter("nationalite");
 		String add=req.getParameter("paddress");
 		String genderboxes =req.getParameter("genderboxes");
-		String selectbasic =req.getParameter("selectbasic");
+		String selectbasic1 =req.getParameter("selectbasic1");
+		String selectbasic2 =req.getParameter("selectbasic2");
+		String selectbasic3 =req.getParameter("selectbasic3");
 		
-		Inscription f = new Inscription();
-		f.setName(name);
-		f.setPrenom(prenom);
-		f.setMdp(mdp);
-		f.setMdp2(mdp2);
-		f.setPhone(phone);
-		f.setEmail(email);
-		f.setNationalite(nationalite);
-		f.setPaddress(add);
-		f.setGenderboxes(genderboxes);
-		f.setSelectbasic(selectbasic);
+		Candidat e = new Candidat();
+//		f.setName(name);
+//		f.setPrenom(prenom);
+//		f.setMdp(mdp);
+//		f.setMdp2(mdp2);
+//		f.setPhone(phone);
+//		f.setEmail(email);
+//		f.setNationalite(nationalite);
+//		f.setPaddress(add);
+//		f.setGenderboxes(genderboxes);
+//		f.setSelectbasic1(selectbasic1);
+//		f.setSelectbasic2(selectbasic2);
+//		f.setSelectbasic3(selectbasic3);
+//		
+		EnregistrementCandidat eInscription = new EnregistrementCandidat("/WEB-INF/enregistrement.xml");
+		eInscription.enregistrer(e);
 		
-		req.setAttribute("utilisateur", f);
+		req.setAttribute("utilisateur", e);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/inscription.jsp").forward(req, response);
 		
 	}

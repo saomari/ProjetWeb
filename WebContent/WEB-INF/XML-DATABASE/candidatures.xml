@@ -1,21 +1,9 @@
-<!-- Contenu du fichier candidature.xml -->
-<!DOCTYPE ROOT SYSTEM "candidature.dtd">
-<candidatures>
+<?xml version="1.0" encoding="UTF-8" ?>
+<candidatures xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="candidatures.xsd">
 	<candidature>
-		<candidat id="c01">
-			<nom>nom</nom>
-			<prenom>prenom</prenom>
-			<civilite>feminin</civilite>
-			<age>19</age>
-			</candidat>
-				<parcours>
-					<annee> année d'obtention du bac</annee>
-					<filiere> filiere bac</filiere>
-					<dernier_diplome> dernier diplome obtenu </dernier_diplome>
-					<filiere> filiere </filiere>
-					<etablissement> établissement </etablissement>
-					<choix> choix de la formation </choix>
-				</parcours>
+		<motivation>blabla</motivation>
+		<school>université</school>
+		<note>17</note>
+		<diplome> licence</diplome>
 	</candidature>
 </candidatures>
-

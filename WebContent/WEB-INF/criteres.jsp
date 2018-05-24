@@ -9,7 +9,7 @@
 <body>
 	<form method="POST" action="register">
 		<fieldset>
-			<legend>Cand</legend>
+			<legend>Candidature</legend>
 			<p>Vous pouvez candidater via ce formulaire.</p>
 			</br>
 			<label for="combobox">Combobox <span class="form-control">*</span></label>

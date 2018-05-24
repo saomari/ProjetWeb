@@ -14,22 +14,27 @@ import com.miage.model.CandidatType;
 import com.miage.model.CandidatureType;
 import com.miage.model.ParcoursType;
 
-import model.Candidature;
+import model.Criteres;
+import model.EnregistrementCriteres;
+import model.EnregistrementFormation;
 
 /**
  * Servlet implementation class gestionCandidatures
  */
-
-
 @WebServlet("/CandidatureServlet")
-public class CandidatureServlet extends HttpServlet {
+public class CriteresServlet extends HttpServlet {
 	private static final String VUE = "/pages/candidature/candidature.jsp";
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CandidatureServlet() {
+    public CriteresServlet() {
         super();
         // TODO Auto-generated constructor stub
+    }
+    
+    public void init() throws ServletException{
+    	super.init();
+    	System.err.println("Initialisé");
     }
 
 	/**
@@ -51,9 +56,12 @@ public class CandidatureServlet extends HttpServlet {
 		String combobox= req.getParameter("combobox");
 	
 
-		Candidature c = new Candidature();
+		Criteres c = new Criteres();
 		c.setCombobox(combobox);
 		
+		
+		EnregistrementCriteres eCandidature = new EnregistrementCriteres("/WEB-INF/enregistrement.xml");
+		eCandidature.enregistrer(c);
 		
 		req.setAttribute("utilisateur", c);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/candidature.jsp").forward(req, response);
