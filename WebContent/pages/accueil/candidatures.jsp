@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Accéder à votre compte</title>
+<title>Dossier de candidature</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
 <link
 	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
@@ -13,22 +13,22 @@
 </head>
 
 <body>
-<form id="monForm" name="monForm" action="../../FormationServlet" method="post" class="formulaire">
-	<div class="text-center">
+	<form id="monForm" name="monForm" action="../../FormationServlet"
+		method="post" class="formulaire">
+		<div class="text-center">
 
-		<h1>Dossier de candidature</h1>
+			<h1>Dossier de candidature</h1>
 
-	</div>
-	<div class="container well">
+		</div>
+		<div class="container well">
 
 
-			<!-- Textarea -->
+			<!-- motivation area -->
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="motivation">
 					Motivations :</label>
 				<div class="col-md-4">
-					<textarea class="form-control" id="motivation"
-						name="motivation"></textarea>
+					<textarea class="form-control" id="motivation" name="motivation"></textarea>
 				</div>
 			</div>
 			<!-- School input-->
@@ -81,8 +81,8 @@
 					onclick="startUpload()">Valider</button>
 			</div>
 			<br> <br> <br>
-			 <button type="submit" class="btn btn-success">Soumettre</button>
-			
+			<button type="submit" class="btn btn-success">Soumettre</button>
+
 
 		</div>
 

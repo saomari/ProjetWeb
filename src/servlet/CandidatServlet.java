@@ -1,5 +1,4 @@
 package servlet;
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +14,8 @@ import model.Candidat;
  */
 @WebServlet("/InscriptionServlet")
 public class CandidatServlet extends HttpServlet {
-	public static final String VUE = "/pages/inscription/inscription.jsp";
+	public static final String VUE = "/pages/inscription/candidat"
+			+ ".jsp";
        
     /**
      * @see HttpServlet#HttpServlet()

@@ -2,11 +2,11 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
 // Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.05.24 à 07:19:02 PM CEST 
+// Généré le : 2018.05.25 à 10:51:58 AM CEST 
 //
 
 
-package servlet;
+package model;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the servlet package. 
+ * generated in the model package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,26 +30,26 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: servlet
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: model
      * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link Formations }
+     * Create an instance of {@link Candidatures }
      * 
      */
-    public Formations createFormations() {
-        return new Formations();
+    public Candidatures createCandidatures() {
+        return new Candidatures();
     }
 
     /**
-     * Create an instance of {@link FormationType }
+     * Create an instance of {@link Candidature }
      * 
      */
-    public FormationType createFormationType() {
-        return new FormationType();
+    public Candidature createCandidature() {
+        return new Candidature();
     }
 
 }

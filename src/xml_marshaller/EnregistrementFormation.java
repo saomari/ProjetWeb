@@ -1,8 +1,9 @@
-package model;
-
+package xml_marshaller;
 import java.io.File;
 import javax.xml.bind.*;
 import javax.xml.bind.Marshaller;
+
+import model.Formation;
 
 public class EnregistrementFormation {
 

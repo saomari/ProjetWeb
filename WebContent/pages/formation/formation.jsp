@@ -9,7 +9,10 @@
 <body>
 <form id="monForm" name="monForm" action="../../CandidatureServlet" method="post" class="formulaire">
 <div>
- <strong>Veuillez selectionner la formation de votre choix :</strong> 
+<h1 class="class-color">L'univeristé de Bordeaux</h1>
+
+<strong>Bienvenue dans l'une des premières universités en Europe !</strong> </br></br></br>
+Veuillez selectionner la formation de votre choix :
 </div>
 
 <div class="container">
@@ -33,7 +36,7 @@
 				</select>
         </div>
 	</div>
-	<input type="submit" value= "soumettre">
+	<button type="submit" class="btn btn-success">Soumettre</button>
 </div>
 <br>
 

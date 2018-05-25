@@ -2,11 +2,11 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
 // Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.05.24 à 07:05:41 PM CEST 
+// Généré le : 2018.05.25 à 10:51:58 AM CEST 
 //
 
 
-package servlet;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="candidature" type="{}candidatureType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="candidature" type="{}candidature" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
 public class Candidatures {
 
     @XmlElement(required = true)
-    protected List<CandidatureType> candidature;
+    protected List<Candidature> candidature;
 
     /**
      * Gets the value of the candidature property.
@@ -64,13 +64,13 @@ public class Candidatures {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link CandidatureType }
+     * {@link Candidature }
      * 
      * 
      */
-    public List<CandidatureType> getCandidature() {
+    public List<Candidature> getCandidature() {
         if (candidature == null) {
-            candidature = new ArrayList<CandidatureType>();
+            candidature = new ArrayList<Candidature>();
         }
         return this.candidature;
     }

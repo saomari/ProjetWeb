@@ -1,132 +1,285 @@
+//
+// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
+// Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+// Généré le : 2018.05.25 à 10:50:43 AM CEST 
+//
+
+
 package model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Classe Java pour candidat complex type.
+ * 
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * 
+ * <pre>
+ * &lt;complexType name="candidat"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;all&gt;
+ *         &lt;element name="prenom" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="mdp" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="sexe" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="naissance" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="nationalite" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="adresse" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="tel" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *       &lt;/all&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "candidat", propOrder = {
+
+})
 public class Candidat {
-	public String name;
-	public String prenom; 
-	public String mdp;
-	public String mdp2; 
-	public String phone; 
-	public String email; 
-	public String nationalite; 
-	public String paddress; 
-	public String genderboxes; 
-	public String selectbasic1;
-	public String selectbasic2;
-	public String selectbasic3;
-	
-	public Candidat() {
-		super();
-	}
 
-	public Candidat(String name, String prenom, String mdp, String mdp2, String phone,
-			String email, String nationalite, String paddress, String genderboxes, String selectbasic1,String selectbasic2,String selectbasic3) {
-		super();
-		this.name = name;
-		this.prenom = prenom;
-		this.mdp = mdp;
-		this.mdp2 = mdp2;
-		this.phone = phone;
-		this.email = email;
-		this.nationalite = nationalite;
-		this.paddress = paddress;
-		this.genderboxes = genderboxes;
-		this.selectbasic1 = selectbasic1;
-		this.selectbasic2 = selectbasic2;
-		this.selectbasic3 = selectbasic3;
-	}
+    @XmlElement(required = true)
+    protected String prenom;
+    @XmlElement(required = true)
+    protected String nom;
+    @XmlElement(required = true)
+    protected String email;
+    @XmlElement(required = true)
+    protected String mdp;
+    @XmlElement(required = true)
+    protected String sexe;
+    @XmlElement(required = true)
+    protected String naissance;
+    @XmlElement(required = true)
+    protected String nationalite;
+    @XmlElement(required = true)
+    protected String adresse;
+    @XmlElement(required = true)
+    protected String tel;
 
-	public String getName() {
-		return name;
-	}
+    /**
+     * Obtient la valeur de la propriété prenom.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getPrenom() {
+        return prenom;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    /**
+     * Définit la valeur de la propriété prenom.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setPrenom(String value) {
+        this.prenom = value;
+    }
 
-	public String getPrenom() {
-		return prenom;
-	}
+    /**
+     * Obtient la valeur de la propriété nom.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNom() {
+        return nom;
+    }
 
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
-	}
+    /**
+     * Définit la valeur de la propriété nom.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNom(String value) {
+        this.nom = value;
+    }
 
-	public String getMdp() {
-		return mdp;
-	}
+    /**
+     * Obtient la valeur de la propriété email.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getEmail() {
+        return email;
+    }
 
-	public void setMdp(String mdp) {
-		this.mdp = mdp;
-	}
+    /**
+     * Définit la valeur de la propriété email.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setEmail(String value) {
+        this.email = value;
+    }
 
-	public String getMdp2() {
-		return mdp2;
-	}
+    /**
+     * Obtient la valeur de la propriété mdp.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMdp() {
+        return mdp;
+    }
 
-	public void setMdp2(String mdp2) {
-		this.mdp2 = mdp2;
-	}
+    /**
+     * Définit la valeur de la propriété mdp.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMdp(String value) {
+        this.mdp = value;
+    }
 
-	public String getPhone() {
-		return phone;
-	}
+    /**
+     * Obtient la valeur de la propriété sexe.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSexe() {
+        return sexe;
+    }
 
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
+    /**
+     * Définit la valeur de la propriété sexe.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSexe(String value) {
+        this.sexe = value;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    /**
+     * Obtient la valeur de la propriété naissance.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNaissance() {
+        return naissance;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    /**
+     * Définit la valeur de la propriété naissance.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNaissance(String value) {
+        this.naissance = value;
+    }
 
-	public String getNationalite() {
-		return nationalite;
-	}
+    /**
+     * Obtient la valeur de la propriété nationalite.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNationalite() {
+        return nationalite;
+    }
 
-	public void setNationalite(String nationalite) {
-		this.nationalite = nationalite;
-	}
+    /**
+     * Définit la valeur de la propriété nationalite.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNationalite(String value) {
+        this.nationalite = value;
+    }
 
-	public String getPaddress() {
-		return paddress;
-	}
+    /**
+     * Obtient la valeur de la propriété adresse.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAdresse() {
+        return adresse;
+    }
 
-	public void setPaddress(String paddress) {
-		this.paddress = paddress;
-	}
+    /**
+     * Définit la valeur de la propriété adresse.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAdresse(String value) {
+        this.adresse = value;
+    }
 
-	public String getGenderboxes() {
-		return genderboxes;
-	}
+    /**
+     * Obtient la valeur de la propriété tel.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getTel() {
+        return tel;
+    }
 
-	public void setGenderboxes(String genderboxes) {
-		this.genderboxes = genderboxes;
-	}
+    /**
+     * Définit la valeur de la propriété tel.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTel(String value) {
+        this.tel = value;
+    }
 
-	public String getSelectbasic1() {
-		return selectbasic1;
-	}
-
-	public void setSelectbasic1(String selectbasic1) {
-		this.selectbasic1 = selectbasic1;
-	}
-	public String getSelectbasic2() {
-		return selectbasic2;
-	}
-
-	public void setSelectbasic2(String selectbasic2) {
-		this.selectbasic2 = selectbasic2;
-	}
-	public String getSelectbasic3() {
-		return selectbasic3;
-	}
-
-	public void setSelectbasic3(String selectbasic3) {
-		this.selectbasic3 = selectbasic3;
-	}
-	
 }

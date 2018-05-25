@@ -2,11 +2,11 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
 // Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.05.24 à 07:19:02 PM CEST 
+// Généré le : 2018.05.25 à 10:51:25 AM CEST 
 //
 
 
-package servlet;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="formation" type="{}formationType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="formation" type="{}formation" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
 public class Formations {
 
     @XmlElement(required = true)
-    protected List<FormationType> formation;
+    protected List<Formation> formation;
 
     /**
      * Gets the value of the formation property.
@@ -64,13 +64,13 @@ public class Formations {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link FormationType }
+     * {@link Formation }
      * 
      * 
      */
-    public List<FormationType> getFormation() {
+    public List<Formation> getFormation() {
         if (formation == null) {
-            formation = new ArrayList<FormationType>();
+            formation = new ArrayList<Formation>();
         }
         return this.formation;
     }

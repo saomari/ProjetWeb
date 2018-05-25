@@ -1,5 +1,5 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-    <xs:complexType name="candidatureType">
+    <xs:complexType name="candidature">
         <xs:all>
             <xs:element name="motivation" type="xs:string" />
             <xs:element name="school" type="xs:string" />
@@ -10,7 +10,7 @@
     <xs:element name="candidatures">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="candidature" maxOccurs="unbounded" type="candidatureType" />
+                <xs:element name="candidature" maxOccurs="unbounded" type="candidature" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
